@@ -7,12 +7,6 @@ public class DeepChat {
         this.id = id;
         this.utilisateur = utilisateur;
     }
-
-
-    public Conversation initierUneConversation(int id, Utilisateur auteur, String message, String modele){
-        Conversation c = new Conversation(id, auteur, message, modele);
-        return c;
-    }
     
 }
 
