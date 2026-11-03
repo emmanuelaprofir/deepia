@@ -1,33 +1,44 @@
 package deepia;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Conversation {
+
     int id;
     Object auteur;
-    String message;
+    List<Message> messages;
     String modele;
 
-    public Conversation (int id, Utilisateur auteur, String message, String modele){
+    public Conversation(int id, Utilisateur auteur, String modele) {
         this.id = id;
-        this.auteur =auteur;
-        this.message = message;
+        this.auteur = auteur;
+        this.messages = new ArrayList<>();
         this.modele = modele;
     }
-    public Conversation (int id, DeepBot auteur, String message, String modele){
+
+    public Conversation(int id, DeepBot auteur, String modele) {
         this.id = id;
-        this.auteur =auteur;
-        this.message = message;
+        this.auteur = auteur;
+        this.messages = new ArrayList<>();
         this.modele = modele;
     }
+
+    // Ajouter un message à la conversation
+    public void ajouterMessage(Message message) {
+        messages.add(message);
+    }
+
     public int getId() {
-    return id;
+        return id;
     }
 
     public Object getAuteur() {
         return auteur;
     }
 
-    public String getMessage() {
-        return message;
+    public List<Message> getMessages() {
+        return messages;
     }
 
     public String getModele() {
@@ -40,10 +51,6 @@ public class Conversation {
 
     public void setAuteur(Object auteur) {
         this.auteur = auteur;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
     }
 
     public void setModele(String modele) {
