@@ -32,4 +32,35 @@ public class Conversation {
         this.message = message;
         this.modele = modele;
     }
+    public int getId() {
+    return id;
+    }
+
+    public Object getAuteur() {
+        return auteur;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public String getModele() {
+        return modele;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setAuteur(Object auteur) {
+        this.auteur = auteur;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public void setModele(String modele) {
+        this.modele = modele;
+    }
 }
