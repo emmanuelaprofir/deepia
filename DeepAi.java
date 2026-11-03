@@ -1,9 +1,9 @@
 package deepia;
 
 public class DeepAi {
-    PromptSystem promptSystem;
+    String promptSystem;
 
-    public DeepAi (PromptSystem promptSystem){
+    public DeepAi (String promptSystem){
         this.promptSystem = promptSystem;
     }
     
