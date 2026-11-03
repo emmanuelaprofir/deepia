@@ -42,4 +42,7 @@ public class Utilisateur {
     public void decrementerSolde(Utilisateur utilisateur,int valeur){
         utilisateur.soldeEuros = utilisateur.soldeEuros - valeur;
     }
+    public int getSolde(){
+        return this.solde;
+    }
 }
