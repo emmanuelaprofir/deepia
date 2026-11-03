@@ -28,31 +28,31 @@ public class Conversation {
     public void ajouterMessage(Message message) {
         messages.add(message);
     }
-
+    // Renvoie l'id de la conversation
     public int getId() {
         return id;
     }
-
+    // Renvoie les informations de l'auteur (le type)
     public Object getAuteur() {
         return auteur;
     }
-
+    // Renvoie les messages de la conversation
     public List<Message> getMessages() {
         return messages;
     }
-
+   // Renvoie le modèle de la conversation (qui ne peut pas être modifié une fois la conversation démarrée)
     public String getModele() {
         return modele;
     }
-
+    // Modifie l'identifiant de la conversation
     public void setId(int id) {
         this.id = id;
     }
-
+    // Modifie l'auteur de la conversation
     public void setAuteur(Object auteur) {
         this.auteur = auteur;
     }
-
+    // Modifie le modele de la conversation
     public void setModele(String modele) {
         this.modele = modele;
     }
